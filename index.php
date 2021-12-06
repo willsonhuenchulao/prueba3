@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" type="image/png" href="img/icono.png">
+    <link rel="icon" type="image/png" href="img/icono2.png">
     <link rel="stylesheet"type="text/css" href="css/main.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
 
     <div class="content-header">
        
-    <div class="logo"><img src="img/2.jpg"></div>
+    <div class="logo"><img src="img/icono2.png"></div>
         <div class="item"><a href="#inicio"> Inicio</a></div>
         <div class="item"><a href="#productos">Post</a></div>
         <div class="item"><a href="#contacto">Contacto</a></div>
@@ -35,13 +35,13 @@
     <div class="content-banner">
         <div class="banner-text">
             <h1>MuySocial</h1>
-            <p>Lorem ipeserunt commodi ipsa distinctio amet itaque odit dolorem minus corrupti, eos maiores cupiditate iusto, hic obcaecati sint quo?</p>
+            <p>Tu Blog Moderno.</p>
            
-            <center><button><a href="login.php">Suscribete...</a></button></center>
+            <center><button><a href="login.php">Comenzamos!!</a></button></center>
         </div>
     
         <div class="banner-img">
-            <img src="img/imagen-header.jpg" alt="">
+            <img src="img/svg.png" width="1200" height="500" alt="">
 
         </div>
     </div>
@@ -52,49 +52,49 @@
 <!-- body-->
 <div class="contents">
     <section id="inicio">
-        <h1>Nuestros inicios</h1>
+        <h1>Elecciones 2021</h1>
         <div class="div-flex">
                 <div class="parts">
                     <div class="content-img">
-                        <div class="img"></div>
+                        <div class="img"> <img src="" alt=""></div>
 
                         </div>
                       </div>
                       <div class="parts">
-                          <h2>blog</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sunt et a excepturi porro. Pariatur recusandae nemo eum, tenetur expedita ad explicabo minima architecto dicta numquam? Laborum rem ipsum sint.</p>
+                          <h2><a href="noticias.php"> Comenta...</a></h2>
+                          <p>Franja electoral retornó de cara a la segunda vuelta presidencial y se mantendrá por 12 días consecutivos</p>
 
 
                       </div>
                 </div>
 
-                <h1>Nuestros inicios</h1>
+                <h1>El mundial se acerca.. </h1>
         <div class="div-flex">
                 <div class="parts">
                     <div class="content-img">
-                        <div class="img"></div>
-
+                        <div class="img"> <img src="img/qatar.jpg" alt=""></div>
+      
                         </div>
                       </div>
                       <div class="parts">
-                          <h2>blog</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sunt et a excepturi porro. Pariatur recusandae nemo eum, tenetur expedita ad explicabo minima architecto dicta numquam? Laborum rem ipsum sint.</p>
+                          <h2>Actualidad..</h2>
+                          <p>Oceanía definió la ruta de sus Clasificatorias a Qatar 2022.</p>
 
 
                       </div>
                 </div>
 
-                <h1>Nuestros inicios</h1>
+                <h1>Universo Cinematografico</h1>
         <div class="div-flex">
                 <div class="parts">
                     <div class="content-img">
-                        <div class="img"></div>
+                        <div class="img"><img src="img/superheroe.jpg" alt=""></div>
 
                         </div>
                       </div>
                       <div class="parts">
-                          <h2>blog</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sunt et a excepturi porro. Pariatur recusandae nemo eum, tenetur expedita ad explicabo minima architecto dicta numquam? Laborum rem ipsum sint.</p>
+                          <h2>Cual es tu personaje favorito!!</h2>
+                          <p>Confirmado: Charlie Cox será Daredevil en el Universo Cinematográfico de Marvel.</p>
 
 
                       </div>
@@ -105,35 +105,35 @@
 
 
     <section id="productos">
-        <h1>blog</h1>
+        <h1>Temas Populares</h1>
 
         <div class="div-grid">
             <div class="grid-item">
                 <div class="content-img-pro">
-                    <img src="./img/imagen-header.jpg" alt="">
+                    <img src="img/cambio.jpg" alt="">
                     </div>
-                    <h3>blog</h3>
+                    <h3>Cambio climatico</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
             </div>
             <div class="grid-item">
                 <div class="content-img-pro">
-                    <img src="./img/imagen-header.jpg" alt="">
+                    <img src="img/climatico.jpg" alt="">
                     </div>
-                    <h3>blog</h3>
+                    <h3>Sequia</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
             </div>
             <div class="grid-item">
                 <div class="content-img-pro">
-                    <img src="./img/imagen-header.jpg" alt="">
+                    <img src="img/elecciones2.jpg" alt="">
                     </div>
-                    <h3>blog</h3>
+                    <h3>Elecciones 2021</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
             </div>
             <div class="grid-item">
                 <div class="content-img-pro">
-                    <img src="./img/imagen-header.jpg" alt="">
+                    <img src="img/universo.jpg" alt="">
                     </div>
-                    <h3>blog</h3>
+                    <h3>Universo Cinematografico</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
             </div>
         </div>
@@ -141,28 +141,28 @@
     </section>
    
     <section id="servicios">
-        <h1>blog</h1>
+        <h1>Temas Para debatir--</h1>
 
         <div class="div-grid">
             <div class="grid-item">
                 <div class="content-img-pro">
-                    <img src="./img/imagen-header.jpg" alt="">
+                    <img src="img/energia.jpg" alt="">
                     </div>
-                    <h3>blog</h3>
+                    <h3>Cambio energetico</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
             </div>
             <div class="grid-item">
                 <div class="content-img-pro">
-                    <img src="./img/imagen-header.jpg" alt="">
+                    <img src="img/superheroe.jpg" alt="">
                     </div>
-                    <h3>blog</h3>
+                    <h3>Nuevos superheroes</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
             </div>
             <div class="grid-item">
                 <div class="content-img-pro">
-                    <img src="./img/imagen-header.jpg" alt="">
+                    <img src="img/climatico.jpg" alt="">
                     </div>
-                    <h3>blog</h3>
+                    <h3>Cada vez menos agua</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
             </div>
             
