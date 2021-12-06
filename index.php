@@ -146,21 +146,26 @@
         <div class="div-grid">
             <div class="grid-item">
                 <div class="content-img-pro">
-                    <img src="img/energia.jpg" alt="">
+                    <a href="https://energia.gob.cl/">
+                    <img src="img/energia.jpg" alt=""></a>
                     </div>
                     <h3>Cambio energetico</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
             </div>
             <div class="grid-item">
                 <div class="content-img-pro">
+                    <a href="https://www.marvel.com/">
                     <img src="img/superheroe.jpg" alt="">
+                    </a>
                     </div>
                     <h3>Nuevos superheroes</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
             </div>
             <div class="grid-item">
                 <div class="content-img-pro">
+                    <a href="https://www.nationalgeographic.es/medio-ambiente/que-es-el-calentamiento-global">
                     <img src="img/climatico.jpg" alt="">
+                    </a>
                     </div>
                     <h3>Cada vez menos agua</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
@@ -174,7 +179,7 @@
         <h1>Comunicate Con nosotros</h1>
         <div class="div-flex">
             <div class="parts">
-                <h2>Tienes pensado </h2>
+                <h2>Tienes pensado Hacer reuniones con mas gente!! </h2>
                 <p>dejanos in mensaje con lo que neesitas</p>
                 <h4>correo: prueba@gmail.com</h4>
                 <h4>celulares : 999 999 888 / 444 555 555</h4>

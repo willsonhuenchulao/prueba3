@@ -1,16 +1,9 @@
 <?php
 
-  /*
-    En ocasiones el usuario puede volver al login
-    aun si ya existe una sesion iniciada, lo correcto
-    es no mostrar otra ves el login sino redireccionarlo
-    a su pagina principal mientras exista una sesion entonces
-    creamos un archivo que controle el redireccionamiento
-  */
+ 
 
   session_start();
 
-  // isset verifica si existe una variable o eso creo xd
   if(isset($_SESSION['id'])){
     header('location: controller/redirec.php');
   }
@@ -24,31 +17,26 @@
     <meta charset="utf-8">
     <title>Login en PHP</title>
 
-    <!-- Importamos los estilos de Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Font Awesome: para los iconos -->
+    
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Sweet Alert: alertas JavaScript presentables para el usuario (más bonitas que el alert) -->
+    
     <link rel="stylesheet" href="css/sweetalert.css">
-    <!-- Estilos personalizados: archivo personalizado 100% real no feik -->
+    
     <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
 
-    <!--
-      Las clases que utilizo en los divs son propias de Bootstrap
-      si no tienes conocimiento de este framework puedes consultar la documentacion en
-      https://v4-alpha.getbootstrap.com/getting-started/introduction/
-    -->
-
+    
+    <center><button><a href="index.php">Volver!!</a></button></center>
 
     <!-- Formulario Login -->
     <form method="POST" action="logic.php"  >
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-4 col-md-offset-4">
-          <!-- Margen superior (css personalizado )-->
+        
           <div class="spacing-1"></div>
 
           <!-- Estructura del formulario -->
