@@ -19,14 +19,15 @@
     if(isset($_REQUEST['new_post'])){
         $title = $_REQUEST['title'];
         $content = $_REQUEST['content'];
-        $img = $_REQUEST['img'];
+        $content = $_REQUEST['img'];
+       
 
         $sql = "INSERT INTO data(title, content, img) VALUES('$title', '$content', '$img')";
         mysqli_query($conn, $sql);
 
         echo $sql;
 
-        header("Location: index.php?info=added");
+        header("Location: contenido.php?info=added");
         exit();
     }
 
@@ -44,7 +45,7 @@
         $sql = "DELETE FROM data WHERE id = $id";
         mysqli_query($conn, $sql);
 
-        header("Location: index.php");
+        header("Location: contenido.php");
         exit();
     }
 
@@ -58,8 +59,19 @@
         $sql = "UPDATE data SET title = '$title', content = '$content', img ='$img' WHERE id = $id";
         mysqli_query($conn, $sql);
 
-        header("Location: index.php");
+        header("Location: contenido.php");
         exit();
+    }
+
+    //validar usuario
+    if(isset($_REQUEST['validar'])){
+        $user = $_REQUEST['usuario'];
+        $contraseña = $_REQUEST['contraseña'];
+
+        $sql ="select * from usuarios where  nombre = '$user' and clave = '$contraseña'";
+        echo $sql;
+      
+        
     }
 
 ?>

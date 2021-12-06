@@ -18,11 +18,12 @@
 <body>
 
    <div class="container mt-5">
-        <form method="POST">
+        <form method="POST" action="contenido.php">
             <input type="text" placeholder="Blog Titulo" class="form-control my-3 bg-dark text-white text-center" name="title">
             <textarea name="content" class="form-control my-3 bg-dark text-white" cols="30" rows="10"></textarea>
             <div></div>
-            <button class="btn btn-dark" name="new_post">href="index.php"a </button>
+            <textarea name="img" id="" cols="30" rows="10"></textarea>
+            <button class="btn btn-dark" name="new_post" type="submit">enviar</a></button>
             </div>
         </form>
    </div>

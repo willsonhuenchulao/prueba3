@@ -37,7 +37,7 @@
             <h1>MuySocial</h1>
             <p>Lorem ipeserunt commodi ipsa distinctio amet itaque odit dolorem minus corrupti, eos maiores cupiditate iusto, hic obcaecati sint quo?</p>
            
-            <center><button><a href="contenido.php">leer mas...</a></button></center>
+            <center><button><a href="login.php">Suscribete...</a></button></center>
         </div>
     
         <div class="banner-img">

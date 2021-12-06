@@ -44,6 +44,7 @@
 
 
     <!-- Formulario Login -->
+    <form method="POST" action="logic.php"  >
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-4 col-md-offset-4">
@@ -54,12 +55,12 @@
           <fieldset>
 
             <legend class="center">Login</legend>
-
+<input type="hiden" name="validar">
             <!-- Caja de texto para usuario -->
             <label class="sr-only" for="user">Usuario</label>
             <div class="input-group">
               <div class="input-group-addon"><i class="fa fa-user"></i></div>
-              <input type="text" class="form-control" id="user" placeholder="Ingresa tu usuario">
+              <input type="text" class="form-control" id="user" name="usuario" placeholder="Ingresa tu usuario">
             </div>
 
             <!-- Div espaciador -->
@@ -69,7 +70,7 @@
             <label class="sr-only" for="clave">Contraseña</label>
             <div class="input-group">
               <div class="input-group-addon"><i class="fa fa-lock"></i></div>
-              <input type="password" autocomplete="off" class="form-control" id="clave" placeholder="Ingresa tu usuario">
+              <input type="password" autocomplete="off" class="form-control" id="clave" name="contraseña" placeholder="Ingresa tu usuario">
             </div>
 
             <!-- Animacion de load (solo sera visible cuando el cliente espere una respuesta del servidor )-->
@@ -87,7 +88,7 @@
             <div class="row">
               <div class="col-xs-8 col-xs-offset-2">
                 <div class="spacing-2"></div>
-                <button type="button" class="btn btn-primary btn-block" name="button" id="login">Iniciar sesion</button>
+                <button type="submit" class="btn btn-primary btn-block" name="button" id="login" >Iniciar sesion</button>
               </div>
             </div>
 
@@ -103,6 +104,7 @@
         </div>
       </div>
     </div>
+    </form>
 
     <!-- / Final Formulario login -->
 
