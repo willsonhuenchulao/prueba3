@@ -120,7 +120,7 @@ button{
     transition: 1s;
 }
 .img{
-    background-image: url(../img/imagen-header.jpg);
+    background-image: url();
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -134,7 +134,7 @@ button{
     transform: rotate(0deg) translate(-30px, -30px);
     width: calc(100% + 60px);
     height: calc(100% +60px);
-    background-image:url(../img/logo.jpg) ;
+    background-image:url() ;
 }
 .parts p{
     margin-top: 20px;
