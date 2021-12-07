@@ -15,6 +15,7 @@
     <title>Document</title>
     <link rel="icon" type="image/png" href="img/icono2.png">
     <link rel="stylesheet"type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
@@ -51,57 +52,33 @@
 
 <!-- body-->
 <div class="contents">
-    <section id="inicio">
-        <h1>Elecciones 2021</h1>
-        <div class="div-flex">
-                <div class="parts">
-                    <div class="content-img">
-                        <div class="img"> <img src="" alt=""></div>
-
+    <div>
+    <!-- Display posts from database -->
+    <div class="row">
+            <?php foreach($query as $q){ ?>
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                    <div class="card text-white bg-dark mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $q['title'];?></h5>
+                            <p class="card-text"><?php echo substr($q['content'], 0, 50);?>...</p>
+                      <!--  <img class="card-img" src="img/fondo.png"  alt=""> -->
+                        <img src="<?php echo $q['img']; ?>" alt="" title=" ?>" width="250" height="200" class="img-responsive" />
+                        
+                            
+                            <a href="view.php?id=<?php echo $q['id']?>" class="btn btn-light">Lee mas <span class="text-danger">&rarr;</span></a>
                         </div>
-                      </div>
-                      <div class="parts">
-                          <h2><a href="noticias.php"> Comenta...</a></h2>
-                          <p>Franja electoral retornó de cara a la segunda vuelta presidencial y se mantendrá por 12 días consecutivos</p>
-
-
-                      </div>
+                    </div>
                 </div>
+            <?php }?>
+        </div>
+         
+        </div>
+       
+  
 
-                <h1>El mundial se acerca.. </h1>
-        <div class="div-flex">
-                <div class="parts">
-                    <div class="content-img">
-                        <div class="img"> <img src="img/qatar.jpg" alt=""></div>
-      
-                        </div>
-                      </div>
-                      <div class="parts">
-                          <h2>Actualidad..</h2>
-                          <p>Oceanía definió la ruta de sus Clasificatorias a Qatar 2022.</p>
+       
+       
 
-
-                      </div>
-                </div>
-
-                <h1>Universo Cinematografico</h1>
-        <div class="div-flex">
-                <div class="parts">
-                    <div class="content-img">
-                        <div class="img"><img src="img/superheroe.jpg" alt=""></div>
-
-                        </div>
-                      </div>
-                      <div class="parts">
-                          <h2>Cual es tu personaje favorito!!</h2>
-                          <p>Confirmado: Charlie Cox será Daredevil en el Universo Cinematográfico de Marvel.</p>
-
-
-                      </div>
-                </div>
-
-        
-    </section>
 
 
     <section id="productos">
