@@ -65,7 +65,7 @@
 
     <!-- prueba -->
    
-
+    <center><button><a href="multimedia.php">Agrega Tu contenido AQUI!!</a></button></center>
 <!-- -->
 
         <!-- Create a new Post button -->
@@ -102,7 +102,41 @@
             <?php }?>
         <?php } ?>
 
-      
+        <!--multimedia-->
+        <?php 
+ require("config.php");
+
+  $sqlVideo   = ("SELECT * FROM videos ORDER BY id DESC LIMIT 1");
+  $queryVideo = mysqli_query($con, $sqlVideo);
+  $totalVideo = mysqli_num_rows($queryVideo);
+  $DataVideo  = mysqli_fetch_array($queryVideo);
+?>
+
+
+    <div class="container">
+     
+     <hr>
+
+      <div class="row text-center">
+        <div class="col-6">
+          <?php 
+          if( $totalVideo >0){ ?>
+          <h2><?php echo $DataVideo['nombreVideo']; ?></h2>
+
+          <div class="video-responsive">
+            <iframe  src="<?php echo $DataVideo['urlVideo']; ?>"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        <?php }else{ ?>
+        <h2>No hay Video</h2>
+        <?php } ?>
+
+        </div>
+
+       
+      </div>
+    </div>
+    <!--multimedia-->
 
         
 </div>

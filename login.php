@@ -76,7 +76,7 @@
             <div class="row">
               <div class="col-xs-8 col-xs-offset-2">
                 <div class="spacing-2"></div>
-                <button type="submit" class="btn btn-primary btn-block" name="button" id="login" >Iniciar sesion</button>
+                <a type="button" class="btn btn-primary btn-block" name="button" id="login"  href="contenido.php"> Iniciar sesion</a>
               </div>
             </div>
 

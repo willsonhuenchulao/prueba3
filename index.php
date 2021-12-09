@@ -15,7 +15,11 @@
     <title>Document</title>
     <link rel="icon" type="image/png" href="img/icono2.png">
     <link rel="stylesheet"type="text/css" href="css/main.css">
+
+    <!-- css para las tarjetas de los post-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 <body>
     <header>
@@ -69,82 +73,54 @@
 </section>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,64L80,80C160,96,320,128,480,149.3C640,171,800,181,960,181.3C1120,181,1280,171,1360,165.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
 </svg>
+<div class="grid-item">
+                <div class="content-img-pro">
+                    <a href="encuesta.php">
+                    <img src="img/vota5.png" alt="" width="1200" height="300">
+                    </a>
+                    </div>
+                   <center><h3>Vota por tu Tema Favorito de la semana --> <button><a href="encuesta.php">VOTA AQUI!!</a></button> <--</h3></center> 
+                   
+            </div>
 
 <!-- body-->
 <div class="contents">
-    <div>
-    <!-- Display posts from database -->
-    <div class="row">
+         <!-- MOSTRAR LOS DATOS Display posts from database -->
+         <div class="row">
             <?php foreach($query as $q){ ?>
                 <div class="col-12 col-lg-4 d-flex justify-content-center">
                     <div class="card text-white bg-dark mt-5" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $q['title'];?></h5>
                             <p class="card-text"><?php echo substr($q['content'], 0, 50);?>...</p>
-                      <!--  <img class="card-img" src="img/fondo.png"  alt=""> -->
-                        <img src="<?php echo $q['img']; ?>" alt="" title=" ?>" width="250" height="200" class="img-responsive" />
-                        
+                            <!--  <img class="card-img" src="img/fondo.png"  alt=""> -->
+                                <img src="<?php echo $q['img']; ?>" alt="" title=" ?>" width="250" height="200" class="img-responsive" />
+                                
                             
-                            <a href="view.php?id=<?php echo $q['id']?>" class="btn btn-light">Lee mas <span class="text-danger">&rarr;</span></a>
+                            <a href="login.php"<?php echo $q['id']?>" class="btn btn-light">Crea tu Post y Debate tus Temas <span class="text-danger">&rarr;</span></a>
+                            
                         </div>
                     </div>
                 </div>
             <?php }?>
         </div>
-         
-        </div>
-       
-  
-
-       
-       
-
-
-
-    <section id="productos">
-        <h1>Temas Populares</h1>
-
-        <div class="div-grid">
-            <div class="grid-item">
-                <div class="content-img-pro">
-                    <img src="img/cambio.jpg" alt="">
-                    </div>
-                    <h3>Cambio climatico</h3>
-                    <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
-            </div>
-            <div class="grid-item">
-                <div class="content-img-pro">
-                    <img src="img/climatico.jpg" alt="">
-                    </div>
-                    <h3>Sequia</h3>
-                    <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
-            </div>
-            <div class="grid-item">
-                <div class="content-img-pro">
-                    <img src="img/elecciones2.jpg" alt="">
-                    </div>
-                    <h3>Elecciones 2021</h3>
-                    <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
-            </div>
-            <div class="grid-item">
-                <div class="content-img-pro">
-                    <img src="img/universo.jpg" alt="">
-                    </div>
-                    <h3>Universo Cinematografico</h3>
-                    <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
-            </div>
-        </div>
-    
-    </section>
+          <!-- Display any info -->
+          <?php if(isset($_REQUEST['info'])){ ?>
+            <?php if($_REQUEST['info'] == "added"){?>
+                <div class="alert alert-success" role="alert">
+                <!-- La publicación se ha agregado correctamente -->
+                </div>
+            <?php }?>
+        <?php } ?>
    
     <section id="servicios">
         <h1>Temas Para debatir--</h1>
 
         <div class="div-grid">
             <div class="grid-item">
-                <div class="content-img-pro">
-                    <a href="https://energia.gob.cl/">
-                    <img src="img/energia.jpg" alt=""></a>
+                    <div class="content-img-pro">
+                        <a href="https://energia.gob.cl/">
+                        <img src="img/energia.jpg" alt=""></a>
                     </div>
                     <h3>Cambio energetico</h3>
                     <p>Lorem ipsum dolor sit, amet consm ipsam maxime</p>
@@ -209,12 +185,14 @@
 <div class="ctn-lbl-comentar"> <label class="lbl-comentar">Lista de comentarios</label></div>
        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="1"></div>
        <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Publicado por <a href="https://www.facebook.com/facebookapp/">Facebook App</a> en&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Jueves, 27 de agosto de 2015</a></blockquote></div>
+       <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Publicado por <a href="https://www.facebook.com/facebookapp/">Facebook App</a> en&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Jueves, 27 de agosto de 2015</a></blockquote></div>
        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
        <div class="fb-group" data-href="https://www.facebook.com/groups/ayearofrunning/" data-width="280" data-show-metadata="false"><blockquote cite="https://www.facebook.com/groups/ayearofrunning/" class="fb-xfbml-parse-ignore">A Year of Running</blockquote></div>
        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
        <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
 <!-- -->
  
+
 </div>
 <footer>
     <center><p>MuySocial | 2021.</p></center>
